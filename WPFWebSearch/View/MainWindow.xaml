@@ -1,0 +1,21 @@
+﻿<Window x:Class="WPFWebSearch.CrawlingSaveModule"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFWebSearch" xmlns:local1="clr-namespace:WPFWebSearch.View"
+        mc:Ignorable="d"
+        Title="CrawlingSaveModule" Height="450" Width="800">
+    <Grid Background="Silver">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="7.5*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <local1:Search Grid.Row="0"/>
+        <local1:ImageView Grid.Row="1"/>
+        <local1:SaveView Grid.Row="2"/>
+
+
+    </Grid>
+</Window>
