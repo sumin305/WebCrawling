@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Drawing;
@@ -55,18 +55,7 @@ namespace WPFWebSearch.ViewModel
             }
             foreach (string s in ImageUrl)
             {
-                //try
-                {
                     source = (ImageSource)new ImageSourceConverter().ConvertFromString(s);
-                }
-                //catch(System.NotSupportedException)
-                {
-                    //source = null;
-                }
-                if (source == null)
-                {
-                    
-                }
                     boxlist.Add(new ImageCheckBox(source)
                                     {
                                         VerticalContentAlignment = System.Windows.VerticalAlignment.Center,
